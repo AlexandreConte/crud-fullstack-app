@@ -1,0 +1,21 @@
+GET http://localhost:3001/produtos
+
+###
+
+POST  http://localhost:3001/produtos
+Content-Type: application/json
+
+{
+  "nome": "Notebook",
+  "descricao": "Notebook Dell",
+  "preco": 2000
+}
+
+###
+
+PATCH http://localhost:3001/produtos/1
+Content-Type: application/json
+
+{
+  "nome": "Notebook Dell Inspiron 15 3000"
+}
